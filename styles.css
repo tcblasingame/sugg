@@ -15,8 +15,8 @@ body {
     min-height: 100vh;
     background: linear-gradient(to top, rgb(61, 27, 73), rgb(0, 0, 0));
 }
-h1 {
-    font-style: none;
+p {
+    color: #ffffff;
 }
 
 .nav {
@@ -61,7 +61,7 @@ h1 {
     position: absolute;
     background-color:transparent;
     z-index: 1;
-    width: 150px; /* Adjust the width as needed */
+    width: 300px; /* Adjust the width as needed */
 }
 
 /* Style for the dropdown links */

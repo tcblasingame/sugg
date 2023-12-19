@@ -3,17 +3,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Tilt Warp', sans-serif;
-    font-family: 'Young Serif', serif; 
     font-size: 16pt;
+    background-color: black;
 }
-
+@font-face {
+    font-family: 'Play With Fire';
+    src: url('PlayWithFire.woff2') format('woff2'),
+        url('PlayWithFire.woff') format('woff'),
+        url('PlayWithFire.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 body {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: rgb(25, 13, 33);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
  
 p {
@@ -21,6 +34,10 @@ p {
 }
 
 .nav {
+    margin-top: .5em;
+    font-family: 'Play With Fire';
+    letter-spacing: .1em;
+    align-items: center;
     z-index: 999;
     top: 0;
     left: 0;
@@ -33,26 +50,12 @@ p {
     background-color: transparent;
 }
 /* Style for the logo */
-.nav a {
+a {
     margin: 0;
     text-decoration: none;
     color: #fff;
 }
-.btn {
-    margin: 1em;
-    text-decoration: none;
-    color: #fff;
-    padding: 1.5em 3em;
-    border: 1px solid #fff;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: row;
-}
 
-.btn a {
-    text-decoration: none;
-    color:#fff;
-}
 
 
 @media screen and (max-width: 800px) {
@@ -106,3 +109,5 @@ p {
       background-position: 100% 50%;
     }
   }
+
+  

@@ -56,9 +56,22 @@ a {
     color: #fff;
 }
 
+@media (min-width: 768px) {
+    .gradient-border {
+        width: 100px;
+        height: 500px;
+    }
+    
+  }
+  @media (min-width: 992px) {
+    .gradient-border {
+        width: 100px;
+        height: 500px;
+    }
+    
+  }
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
  
 }
 
@@ -71,7 +84,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 1em;
-    width: 1280px;
+    width: 400px;
     height: 720px;
     font-size: 1.2em;
     color: white;

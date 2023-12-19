@@ -57,35 +57,34 @@ a {
 }
 
 @media (min-width: 768px) {
-    .gradient-border {
-        width: 100px;
-        height: 500px;
+    .stream {
+        width: 620px;
+        height: 378px;
     }
     
   }
   @media (min-width: 992px) {
-    .gradient-border {
-        width: 100px;
-        height: 500px;
+    .stream {
+        width: 620px;
+        height: 378px;
     }
     
   }
 
-@media screen and (max-width: 480px) {
- 
-}
+
 
 .gradient-border {
     --border-width: 3px;
     position: relative;
-    margin: 0.5em;
+    margin: 1em;
     display: flex;
     gap: .5em;
     justify-content: center;
     align-items: center;
     padding: 1em;
-    width: 400px;
-    height: 720px;
+    
+    width: 95%;
+    height: 100%;
     font-size: 1.2em;
     color: white;
     background: rgb(25, 13, 33);

@@ -1,0 +1,314 @@
+body {
+  
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#acb4bf 1.5px, transparent 1.5px), linear-gradient(to right, #acb4bf 1.5px, transparent 1.5px);
+background-size: 27px 27px;
+background-color: #d1d5de;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* navbar */
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #c89a4a;
+  height: 70px;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  width: 100%;
+}
+.nav h1 {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-family: 'Bad Script', cursive;
+  margin-left: 1.5em;
+  overflow: auto;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .8em;
+  margin-right: 1.5em;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/* hero posters */
+
+.hero {
+  margin-bottom: 8em;
+}
+.hero a {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  justify-content: center;
+}
+.hero h1 {
+  color: #000000;
+}
+.hero img {
+  background: transparent;
+  padding-top: 100px;
+  margin-bottom: -5em;
+}
+ .hero img:hover {
+  transform: scale(1.05);
+  transition: transform 0.9s;
+ }
+
+
+
+ /* :: Tour Dates Area CSS */
+.tickets {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-top: 3em;
+  justify-content: center;
+  padding-bottom: 3em;
+}
+
+.tix{
+  background: transparent;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  align-items: center;
+}
+.upcoming-events {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid;
+}
+
+.upcoming-events h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: 800;
+}
+
+.upcoming-events p {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+.tixbtn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  border: 2px solid;
+  padding: 0.25em 0.5em;
+ 
+  box-shadow: 10px 10px 30px -1px rgba(255, 255, 255, 0.24);
+
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  float: right;
+  margin-top: -4.2em;
+  margin-right: 1.5em;
+}
+
+.tixbtn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.tixbtn:hover {
+  background-color:rgb(255, 255, 255);
+  
+  color: #000000;
+  transform: scale(1.06);
+  transition: transform .5s ease;
+  
+}
+
+@media (min-width: 768px) {
+  .tixbtn {
+    padding: 0.25em 0.75em;
+  }
+}
+
+/* merch */
+.merch {
+  background: transparent;
+  margin: 1.5em;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  padding-top: 1.5em;
+}
+
+.merch img {
+  height: auto;
+  width: 100%;
+  display: flex;
+ 
+  
+}
+
+
+.item1 :hover {
+  transform: scale(1.05);
+  transition: transform 1s ease;
+}
+
+.item2 :hover {
+  transform: scale(1.05);
+  transition: transform 1s ease;
+}
+
+.merch h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+/* discography */
+.discography {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  justify-items: center;
+}
+
+.albumpic {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+
+
+
+
+/* :: 9.1.0 Discography Area CSS */
+.single-album {
+  position: relative;
+  z-index: 1;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  
+}
+
+.single-album img {
+  width: 100%;
+}
+
+.single-album .album-info {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+
+
+}
+
+.single-album .album-info h5 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.single-album .album-info p {
+  margin-bottom: 0;
+}
+
+.single-album:hover,
+.single-album:focus {
+  box-shadow: 0 5px 70px 0 rgba(0, 0, 0, 0.15);
+}
+
+.single-album-area {
+  position: relative;
+  z-index: 1;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  margin-bottom: 30px;
+}
+
+.single-album-area .album-thumb {
+  position: relative;
+  z-index: 1;
+}
+
+.single-album-area img {
+  width: 100%;
+}
+
+.single-album-area .album-info {
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 60px
+}
+
+.single-album-area .album-info h5 {
+  font-size: 60px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.single-album-area .album-info h3 {
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: -.3em;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+.single-album-area .album-info p {
+  margin-bottom: 0;
+}
+
+.album-thumb:hover img {
+  filter: brightness(50%);
+  transform: scale(1.06);
+  transition: transform 1s ease;
+  
+}
+
+.play-button {
+  display: none;
+  transition-delay: 3s;
+}
+.play-button a{
+  margin-right: 5px;
+}
+.album-thumb:hover .play-button  {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  
+  border: none;
+  background: transparent;
+  
+}

@@ -27,7 +27,7 @@ background-color: #d1d5de;
   font-size: 1.5em;
   font-family: 'Bad Script', cursive;
   margin-left: 1.5em;
-  overflow: auto;
+  overflow: hidden;
 }
 .links {
   display: flex;
@@ -61,10 +61,6 @@ background-color: #d1d5de;
   padding-top: 100px;
   margin-bottom: -5em;
 }
- .hero img:hover {
-  transform: scale(1.05);
-  transition: transform 0.9s;
- }
 
 
 
@@ -138,14 +134,7 @@ background-color: #d1d5de;
   left: 5px;
 }
 
-.tixbtn:hover {
-  background-color:rgb(255, 255, 255);
-  
-  color: #000000;
-  transform: scale(1.06);
-  transition: transform .5s ease;
-  
-}
+
 
 @media (min-width: 768px) {
   .tixbtn {
@@ -173,15 +162,6 @@ background-color: #d1d5de;
 }
 
 
-.item1 :hover {
-  transform: scale(1.05);
-  transition: transform 1s ease;
-}
-
-.item2 :hover {
-  transform: scale(1.05);
-  transition: transform 1s ease;
-}
 
 .merch h1 {
   font-size: 1.5em;
@@ -238,7 +218,7 @@ background-color: #d1d5de;
   margin-bottom: 0;
 }
 
-.single-album:hover,
+
 .single-album:focus {
   box-shadow: 0 5px 70px 0 rgba(0, 0, 0, 0.15);
 }

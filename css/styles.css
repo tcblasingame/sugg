@@ -4385,8 +4385,8 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-footer {
     background-color : var(--color-gray-19);
-    padding-top      : calc(5.5 * var(--space));
-    padding-bottom   : var(--vspace-3_5);
+    padding-top      : -5em;
+    padding-bottom   : 4em;
     margin-top       : auto;
     font-weight      : 300;
     color            : rgba(255, 255, 255, 0.4);
@@ -4724,8 +4724,8 @@ img.u-pull-left {
 /* hero posters */
 
 .hero {
-    margin-bottom: 5em;
-    margin-top: -6em;
+    margin-bottom: 3em;
+    margin-top: -8em;
   }
   .hero a {
     display: flex;
@@ -4761,8 +4761,8 @@ img.u-pull-left {
     background: transparent;
     margin-left: 1.5em;
     margin-right: 1.5em;
-    margin-top: 2em;
-    margin-bottom: 3em;
+    margin-top: 4em;
+    margin-bottom: 4em;
     align-items: center;
   }
   .upcoming-events {
@@ -4869,11 +4869,11 @@ img.u-pull-left {
   
   /* discography */
   .discography {
-    margin-top: 3em;
+    margin-top: 12em;
     margin-bottom: -5em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 1.5em;
+    padding-top: 6em;
     padding-bottom: 1.5em;
     justify-items: center;
   }
@@ -4929,6 +4929,7 @@ img.u-pull-left {
   .single-album-area .album-thumb {
     position: relative;
     z-index: 1;
+   
   }
   
   .single-album-area img {
@@ -4962,31 +4963,16 @@ img.u-pull-left {
     margin-bottom: 0;
   }
   
-  .album-thumb:hover img {
-    filter: brightness(50%);
-    transform: scale(1.06);
-    transition: transform 1s ease;
-    
-  }
   
   .play-button {
-    display: none;
-    transition-delay: 3s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
   }
-  .play-button a{
-    margin-right: 5px;
-  }
-.album-thumb:hover .play-button {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.5);
-    border: none;
-    background: transparent;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    /* Add the following properties to center the element */
+  .play-button a {
     
-}
+    margin-top: -1.5em;
+  }
+

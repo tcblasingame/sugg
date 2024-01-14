@@ -4724,8 +4724,8 @@ img.u-pull-left {
 /* hero posters */
 
 .hero {
-    margin-bottom: 10em;
-    margin-top: -4em;
+    margin-bottom: 5em;
+    margin-top: -6em;
   }
   .hero a {
     display: flex;
@@ -4734,6 +4734,7 @@ img.u-pull-left {
     margin-left: 1.5em;
     margin-right: 1.5em;
     justify-content: center;
+    margin-bottom: 1.5em;
   }
   .hero h1 {
     color: #000000;
@@ -4751,15 +4752,17 @@ img.u-pull-left {
     display: flex;
     flex-direction: column;
     background-color: #c89a4a;
-    padding-top: 1.5em;
     justify-content: center;
-    padding-bottom: 1.5em;
+   
+    
   }
   
   .tix{
     background: transparent;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 3em;
     align-items: center;
   }
   .upcoming-events {
@@ -4781,6 +4784,28 @@ img.u-pull-left {
   }
   
   .upcoming-events p {
+    font-size: 12px;
+   
+  }
+  .upcoming-eventsLAST {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+    
+  }
+  
+  .upcoming-eventsLAST h1 {
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 800;
+    color: #ffffff;
+  }
+  
+  .upcoming-eventsLAST p {
     font-size: 12px;
    
   }
@@ -4825,30 +4850,19 @@ img.u-pull-left {
 
   /* merch */
 .merch {
-        
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
-        gap: .5em;
-        padding-top: 1.5em;
-        background-size: cover; /* Add this line */
-    }
-  
-  .merch img {
-    height: auto;
-    width: 90%;
-    align-items: center;
+    justify-content: center;
     display: flex;
-    margin-left: .5em;
-    margin-right: .5em;
-    margin-top: 5em;
-  }
+    background-size: cover; /* Add this line */
+}
+ 
   
   .merch h1 {
     font-size: 1.5em;
+    padding-top: 3em;
+    padding-bottom: -9em;
+    
     text-align: center;
-    margin-top: .5em;
-    margin-bottom: 3em;
+    align-items: center;
     color: #ffffff;
     
   }
@@ -4965,8 +4979,8 @@ img.u-pull-left {
 .album-thumb:hover .play-button {
     display: block;
     position: absolute;
-    top: 45%;
-    left: 36%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%) scale(1.5);
     border: none;
     background: transparent;

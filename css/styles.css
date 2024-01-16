@@ -92,7 +92,7 @@
 :root {
     --font-1    : "Inter", sans-serif;
     --font-2    : "Heebo", sans-serif;
-
+    background-color: 161616;
     /* monospace
      */
     --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace;

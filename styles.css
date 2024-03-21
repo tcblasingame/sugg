@@ -1,61 +1,184 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    box-sizing: border-box;
-    position: fixed;
-    overflow: hidden;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    
-  }
+* {
 
+  font-family: 'Manrope', sans-serif;
+  
+  
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(25, 13, 33);
+  box-sizing: border-box;
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background: transparent;
+}
+
+h1 {
+  color: white;
+  font-size: 1em;;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  box-sizing: border-box;
+  position: fixed;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+  background: transparent;
+  top: 0;
+  
+
+}
+.links-title {
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+.links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+ 
+  margin-top: -1em;
+  top: 0;
+  
+ 
+  
+  background: transparent;
+  
+
+}
+.links svg {
+  
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease-in-out;
+  
+}
+
+.links svg:hover {
+  transform: scale(1.2);
+}
+
+/* gradient border */
 .gradient-border {
-    --border-width: 8px;
-    position: relative;
-    display: flex;
-    gap: .5em;
-    justify-content: center;
-    width: 640px;
-    height: 360px;
-    flex-direction: column;
-    font-size: 1.2em;
-    color: white;
-    background: rgb(0, 0, 0);
-    border-radius: var(--border-width);
-  
-    &::after {
-      position: absolute;
-      content: "";
-      top: calc(-1 * var(--border-width));
-      left: calc(-1 * var(--border-width));
-      z-index: -1;
-      width: calc(100% + var(--border-width) * 2);
-      height: calc(100% + var(--border-width) * 2);
-      background: linear-gradient(
-        60deg,
-        hsl(224, 85%, 66%),
-        hsl(269, 85%, 66%),
-        hsl(314, 85%, 66%),
-        hsl(359, 85%, 66%),
-        hsl(44, 85%, 66%),
-        hsl(89, 85%, 66%),
-        hsl(134, 85%, 66%),
-        hsl(179, 85%, 66%)
-      );
-      background-size: 300% 300%;
-      background-position: 0 50%;
-      border-radius: calc(2 * var(--border-width));
-      animation: moveGradient 4s alternate infinite;
-    }
+  --border-width: 3px;
+  position: relative;
+  display: flex;
+  gap: .5em;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  font-size: 1.2em;
+  color: white;
+  background: rgb(25, 13, 33);
+  border-radius: var(--border-width);
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
   }
-  
-  @keyframes moveGradient {
-    50% {
-      background-position: 100% 50%;
-    }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
   }
+}
+
+
+
+
+
+/* Dashboard Admin */
+.admin {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  box-sizing: border-box;
+  position: fixed;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+  background: transparent;
+  bottom: 0;
+  
+}
+.admin svg {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.admin svg:hover {
+  transform: scale(1.2);
+}
+
+.admin-title {
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+.admin-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+
+  margin-top: -1em;
+  
+  background: transparent;
+  
+
+}
+
+.search {
+  display: flex;;
+  justify-content: center;
+  align-items: center;
+  
+}

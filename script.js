@@ -1,7 +1,7 @@
 function checkPassword() {
     var password = document.getElementById('passwordInput').value;
     // Replace 'your_password' with the actual password
-    if (password === 'password') {
+    if (password === 'suckandfuck') {
         document.getElementById('popup').style.display = 'none';
     } else {
         alert('Incorrect password. Please try again.');

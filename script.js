@@ -21,3 +21,8 @@ window.onload = function() {
         document.getElementById('popup').style.display = 'none';
     }
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Focus on the password input field when the page loads
+    document.getElementById('passwordInput').focus();
+});

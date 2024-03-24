@@ -1,16 +1,28 @@
 * {
 
-  font-family: 'Manrope', sans-serif;
-  
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .05em;
   
 }
+.timtv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  max-width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(25, 13, 33);
-  box-sizing: border-box;
+  background: rgb(8, 7, 9);
   position: fixed;
   overflow: hidden;
   bottom: 0;
@@ -20,165 +32,64 @@ body {
   
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  background: transparent;
+.about-border {
+  margin: 1em;
+  margin-bottom: 2em;
+  margin-top: -2em;
+}
+
+.setup-border {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 1.5em;
 }
 
 h1 {
+  text-decoration: none;
+  font-size: 1em;
   color: white;
-  font-size: 1em;;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  box-sizing: border-box;
-  position: fixed;
-  margin-bottom: 1.5em;
-  margin-top: 2em;
-  background: transparent;
-  top: 0;
-  
-
-}
-.links-title {
-  display: flex;
-  flex-direction: row;
-  
-  
-}
-.links-list {
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  box-sizing: border-box;
- 
-  margin-top: -1em;
-  top: 0;
-  
- 
-  
-  background: transparent;
-  
-
-}
-.links svg {
-  
-  width: 40px;
-  height: 40px;
-  transition: transform 0.2s ease-in-out;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   
 }
-
-.links svg:hover {
-  transform: scale(1.2);
-}
-
-/* gradient border */
-.gradient-border {
-  --border-width: 3px;
-  position: relative;
-  display: flex;
-  gap: .5em;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  font-size: 1.2em;
+h2 {
+  text-decoration: none;
+  font-size: 1em;
   color: white;
-  background: rgb(25, 13, 33);
-  border-radius: var(--border-width);
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: calc(-1 * var(--border-width));
-    left: calc(-1 * var(--border-width));
-    z-index: -1;
-    width: calc(100% + var(--border-width) * 2);
-    height: calc(100% + var(--border-width) * 2);
-    background: linear-gradient(
-      60deg,
-      hsl(224, 85%, 66%),
-      hsl(269, 85%, 66%),
-      hsl(314, 85%, 66%),
-      hsl(359, 85%, 66%),
-      hsl(44, 85%, 66%),
-      hsl(89, 85%, 66%),
-      hsl(134, 85%, 66%),
-      hsl(179, 85%, 66%)
-    );
-    background-size: 300% 300%;
-    background-position: 0 50%;
-    border-radius: calc(2 * var(--border-width));
-    animation: moveGradient 4s alternate infinite;
-  }
+  text-align: left;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;  
+}
+h3 {
+  text-decoration: none;
+  font-size: .8em;
+  font-weight: 300;
+  color: white;
+  text-align: left;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;  
 }
 
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-
-
-
-
-/* Dashboard Admin */
-.admin {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  box-sizing: border-box;
-  position: fixed;
-  margin-bottom: 1.5em;
-  margin-top: 2em;
-  background: transparent;
-  bottom: 0;
-  
-}
-.admin svg {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.admin svg:hover {
-  transform: scale(1.2);
-}
-
-.admin-title {
-  display: flex;
-  flex-direction: row;
-  
-  
-}
-.admin-list {
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
-  justify-content: center;
-  align-items: center;
+h4 {
+  text-decoration: none;
+  font-size: .8em;
+  font-weight: 300;
+  color: rgb(223, 192, 247);
   text-align: center;
-  box-sizing: border-box;
-
-  margin-top: -1em;
-  
-  background: transparent;
-  
-
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.link {
+  color: rgb(223, 192, 247);
+  text-decoration: none;
 }
 
-.search {
-  display: flex;;
-  justify-content: center;
-  align-items: center;
-  
-}

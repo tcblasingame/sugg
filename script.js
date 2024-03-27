@@ -2,11 +2,26 @@ function checkPassword() {
     var password = document.getElementById('passwordInput').value;
     // Replace 'your_password' with the actual password
     if (password === 'suckandfuck') {
-        document.getElementById('popup').style.display = 'none';
+      
+        // Zoom out the popup
+        var popup = document.getElementById('popup');
+        popup.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+        popup.style.transform = 'scale(0.5)';
+        popup.style.opacity = '0';
+        setTimeout(function() {
+            popup.style.display = 'none';
+            // Fade out the black screen
+            blackScreen.style.transition = 'opacity .3s ease'; // Adjust the transition duration
+            blackScreen.style.opacity = '0';
+            setTimeout(function() {
+                blackScreen.parentNode.removeChild(blackScreen);
+            }, 1000); // Adjust the timeout to match the transition duration
+        }, 500); // Adjust the timeout to match the transition duration
     } else {
         alert('Incorrect password. Please try again.');
     }
 }
+
 
 document.getElementById('passwordInput').addEventListener('keyup', function(event) {
     if (event.keyCode === 13) {

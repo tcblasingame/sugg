@@ -42,7 +42,7 @@ body {
   left: 0;
   right: 0;
   top: 0;
-  
+
 }
 
 .about-border {
@@ -120,6 +120,13 @@ h5 {
   text-decoration: none;
 }
 
+.discord{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
 .popup {
   display: flex;
   align-items: center;
@@ -176,8 +183,15 @@ h5 {
   cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
   .timtv2 {
     max-width: 90%;
   }
+}
+
+@media only screen and (min-width: 1025px) {
+  body {
+    margin-left: 20em;
+    margin-right: 20em;
+}
 }

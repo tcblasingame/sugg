@@ -52,10 +52,12 @@ body {
 }
 
 .setup-border {
-  border: 2px solid #ffffff;
-  border-radius: 10px;
+  border: 2px solid #f3d5fe;
+  border-radius: 15px;
   margin: 1.5em;
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -213,6 +215,7 @@ h5 {
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   background-color: transparent;
+  display: inline-block;
   color: #ffffff;
   cursor: pointer;
   padding: 18px;
@@ -220,12 +223,14 @@ h5 {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 20px;
   
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #ffffff;
+  background-color: #f3d5fe;
+  border-radius: 10px;
   color: #13011a;
 }
+

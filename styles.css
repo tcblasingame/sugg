@@ -54,7 +54,7 @@ body {
 .setup-border {
   border: 2px solid #f3d5fe;
   border-radius: 15px;
-  margin: 1.5em;
+  margin: 1em;
   margin-bottom: 2em;
   display: flex;
   flex-direction: column;

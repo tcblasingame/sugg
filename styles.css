@@ -61,14 +61,18 @@ body {
 }
 
 h1 {
-  text-decoration: none;
-  font-size: 1em;
-  color: white;
-  text-align: center;
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin: 1em;
+  background-color: transparent;
+  display: inline-block;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+
   
 }
 h2 {
@@ -228,7 +232,7 @@ h5 {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
   
 }
 

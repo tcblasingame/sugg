@@ -197,6 +197,11 @@ h5 {
     margin-left: 20em;
     margin-right: 20em;
 }
+.content {
+  width: 1280px;
+  height: 720px;
+}
+
 }
 
 

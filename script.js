@@ -30,17 +30,6 @@ document.getElementById('passwordInput').addEventListener('keyup', function(even
     }
 });
 
-// Check if the password has already been entered by checking the cookie
-window.onload = function() {
-    if (document.cookie.includes('passwordEntered=true')) {
-        document.getElementById('popup').style.display = 'none';
-    }
-};
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Focus on the password input field when the page loads
-    document.getElementById('passwordInput').focus();
-});
 
 
 var coll = document.getElementsByClassName("collapsible");
@@ -57,3 +46,22 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var coll = document.querySelector(".collapsible");
+    var content = document.querySelector(".content");
+    var video = document.getElementById("videoStream");
+
+    coll.addEventListener("click", function() {
+        this.classList.toggle("active");
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            // Stop video playback
+            video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            // Start video playback
+            video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        }
+    });
+});

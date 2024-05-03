@@ -228,7 +228,7 @@ h5 {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 20px;
+  font-size: 24px;
   
 }
 
@@ -239,3 +239,7 @@ h5 {
   color: #13011a;
 }
 
+.nbalogo {
+  width: 20px;
+  height: 20px;
+}

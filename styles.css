@@ -216,8 +216,11 @@ h5 {
   display: none;
   overflow: hidden;
   background-color: #13011a;
-  width: 360px;
-  height: 199px;
+  width: 400px;
+  height: 229px;
+  margin: .5em;
+  align-items: center;
+  justify-content: center;
   
 }
 

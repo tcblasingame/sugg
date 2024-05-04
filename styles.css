@@ -79,7 +79,8 @@ h1 {
   background-color: #13011a;
   width: 360px;
   height: 199px;
-
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
   justify-content: center;
   
@@ -110,4 +111,13 @@ h1 {
 .nbalogo {
   width: 16px;
   height: 16px;
+}
+
+@media (min-width: 747px) {
+  .setup-border {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto
+  }
+ 
 }

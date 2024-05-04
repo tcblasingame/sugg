@@ -2,12 +2,10 @@
   font-family: 'Roboto', sans-serif;
   letter-spacing: .05em;
   background: #13011a;
+  
 }
-html {
-  margin: 0;
-  padding: 0;
-  height: auto;
-  width: auto;
+html, body{
+ height: 100vm;
 
 }  
 

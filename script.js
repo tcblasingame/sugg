@@ -48,16 +48,7 @@ var player = videojs('game2', {
 });
 player.play();
 
-var player = videojs('espn', {
-	html5: {
-    hls: {
-      overrideNative: overrideNative
-    },
-    nativeVideoTracks: !overrideNative,
-    nativeAudioTracks: !overrideNative,
-    nativeTextTracks: !overrideNative
-  }
-});
+var player = videojs('espn');
 player.play();
 
 

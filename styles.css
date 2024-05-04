@@ -228,3 +228,7 @@ h3 {
 }
 
 
+@media (min-width: 720px) { 
+  .timtv { 
+    width: 10%; 
+  } }

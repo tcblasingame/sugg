@@ -21,6 +21,7 @@ body {
   background: #13011a;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 

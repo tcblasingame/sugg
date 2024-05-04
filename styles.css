@@ -1,23 +1,8 @@
 * {
-  
   font-family: 'Roboto', sans-serif;
   letter-spacing: .05em;
   
 }
-.timtv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  margin-bottom: 3em;
-  
-  max-width: 30%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
 
 body {
   display: flex;
@@ -34,29 +19,65 @@ body {
 }
 
 
-.setup-border {
+.nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem;
+  flex-direction: row;
+ 
+}
+
+.timtv {
+  width: 25%;
+}
+
+.border {
   border: 2px solid #f3d5fe;
   border-radius: 15px;
   margin: 1em;
   margin-bottom: 1em;
   display: flex;
   flex-direction: column;
+  width: 95%;
 }
 
 h1 {
-  margin: 1em;
   background-color: transparent;
-  display: inline-block;
   color: #ffffff;
   cursor: pointer;
-  padding: 18px;
   width: 100%;
   border: none;
-  text-align: left;
   outline: none;
-  font-size: 18px;
-
-  
+  font-size: 16px;
+}
+h2 {
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  width: 95%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-right: 2em;
+  margin-bottom: -.5em;
+  text-align: right;
+}
+h3 {
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  width: 95%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-left: 2em;
+  margin-bottom: -.5em;
+  text-align: left;
 }
 
 
@@ -114,14 +135,11 @@ h1 {
   margin-left: 1.5em;
 }
 
+
 .links {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  max-width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
- 
+  margin-right: 4em;
+  list-style: none;
 }
+ 

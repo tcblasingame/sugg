@@ -21,7 +21,3 @@ document.addEventListener("DOMContentLoaded", function() {
     var video = document.getElementById("videoStream");
 
    
-});
-var overrideNative = false;
-
-player.play();

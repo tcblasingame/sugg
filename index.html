@@ -9,8 +9,11 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-        <link href="//vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet">
-        <script src="//vjs.zencdn.net/8.3.0/video.min.js"></script>
+        <link href="https://unpkg.com/video.js@6.4.0/dist/video-js.css" rel="stylesheet">
+        <script src="https://unpkg.com/video.js@6.4.0/dist/video.js"></script>
+        <script src="https://unpkg.com/videojs-flash@2.0.1/dist/videojs-flash.js"></script>
+        <script src="https://unpkg.com/videojs-contrib-hls@5.12.2/dist/videojs-contrib-hls.js"></script>
+        <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
         <link rel="manifest" href="/img/site.webmanifest">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,46 +29,39 @@
                 <!--Game 1-->
                 <button type="button" class="collapsible"><img class="nbalogo" src="https://cdn.apigodata.com/onexbet/pk4329.png?w=120&h=120&f=sd"> Magic vs Cavaliers <img class="nbalogo" src="https://cdn.apigodata.com/onexbet/pk4325.png?w=120&h=120&f=sd"></button>
                 <div class="content">
-                  <iframe src='https://embedme.top/embed/orlando-magic-vs-cleveland-cavaliers/1
-                  ' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen allowtransparency referrerpolicy='unsafe-url' sandbox='allow-scripts allow-same-origin'></iframe>
+                  <video id=game1 width=360 height=199 class="video-js vjs-default" controls>
+                    <source src="http://143.244.60.30/ESPN/index.m3u8" type="application/x-mpegURL">
+                  </video>
                 </div>
                 <!--Game 2-->
                 <button type="button" class="collapsible"><img class="nbalogo" src="https://cdn.apigodata.com/onexbet/pk3976.png?w=240&h=240&f=sd"> Mavericks vs Clippers <img class="nbalogo" src="https://cdn.apigodata.com/onexbet/pk4369.png?w=240&h=240&f=sd"></button>
                 <div class="content">
-                  <video-js id="my_video_1" class="vjs-default-skin" controls preload="auto" width="360px" height="199px">
+                  <video id=game2 width=360 height=199 class="video-js vjs-default" controls>
                     <source src="http://143.244.60.30/ESPN/index.m3u8" type="application/x-mpegURL">
-                  </video-js>
-                  
-                  <script src="https://unpkg.com/video.js/dist/video.js"></script>
-                  <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.js"></script>
-                  
-                  <script>
-                    var player = videojs('my_video_1');
-                    var overrideNative = false;
-
-                    var player = videojs('example-video', {
-  html5: {
-    hls: {
-      overrideNative: overrideNative
-    },
-    nativeVideoTracks: !overrideNative,
-    nativeAudioTracks: !overrideNative,
-    nativeTextTracks: !overrideNative
-  }
-});
-player.play();
-                  </script>
+                  </video>
                 </div>
+                
+              </div>
+              <div class="setup-border">
                 <!--ESPN-->
                 <button type="button" class="collapsible"><img class="nbalogo" src="https://espnpressroom.com/us/files/2018/03/App-Icon-iOS.png"> ESPN</button>
                 <div class="content">
-                  <iframe  id="videoStream" src='https://embedme.top/embed/espn-first-take/1' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen allowtransparency referrerpolicy='unsafe-url' sandbox='allow-scripts allow-same-origin'></iframe>
+                  <video id=espn width=360 height=199 class="video-js vjs-default" controls>
+                    <source src="http://143.244.60.30/ESPN/index.m3u8" type="application/x-mpegURL">
+                  </video>
                 </div>
                 <!--NBATV-->
                 <button type="button" class="collapsible"><img class="nbalogo" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/316px-NBA_TV.svg.png?20180208231214"> NBA TV</button>
                 <div class="content">
                   <iframe  id="videoStream" src='https://embedme.top/embed/nba-tv/1' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen allowtransparency referrerpolicy='unsafe-url' sandbox='allow-scripts allow-same-origin'></iframe>
                 </div>
+              <!--TNT-->
+              <button type="button" class="collapsible"><img class="nbalogo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be74b3f4-088f-4981-a2fa-c8b64335dc92/dex71v9-cbd0f25b-6009-46ef-80f6-6ba17bc375a5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlNzRiM2Y0LTA4OGYtNDk4MS1hMmZhLWM4YjY0MzM1ZGM5MlwvZGV4NzF2OS1jYmQwZjI1Yi02MDA5LTQ2ZWYtODBmNi02YmExN2JjMzc1YTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ss2XoAcnnf4QlcpoGV5xTewkd_SdlL8xrYb5t7ux76E"> TNT</button>
+              <div class="content">
+                <video id=tnt width=360 height=199 class="video-js vjs-default" controls>
+                  <source src="http://170.254.18.106/TNT/index.m3u8" type="application/x-mpegURL">
+                </video>
+              </div>
               </div>
               <!--PGA-->
                 <div class="setup-border">

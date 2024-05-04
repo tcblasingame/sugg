@@ -65,3 +65,54 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+var overrideNative = false;
+
+var player = videojs('game1', {
+	html5: {
+    hls: {
+      overrideNative: overrideNative
+    },
+    nativeVideoTracks: !overrideNative,
+    nativeAudioTracks: !overrideNative,
+    nativeTextTracks: !overrideNative
+  }
+});
+player.play();
+
+var player = videojs('game2', {
+	html5: {
+    hls: {
+      overrideNative: overrideNative
+    },
+    nativeVideoTracks: !overrideNative,
+    nativeAudioTracks: !overrideNative,
+    nativeTextTracks: !overrideNative
+  }
+});
+player.play();
+
+var player = videojs('espn', {
+	html5: {
+    hls: {
+      overrideNative: overrideNative
+    },
+    nativeVideoTracks: !overrideNative,
+    nativeAudioTracks: !overrideNative,
+    nativeTextTracks: !overrideNative
+  }
+});
+player.play();
+
+
+var player = videojs('tnt', {
+	html5: {
+    hls: {
+      overrideNative: overrideNative
+    },
+    nativeVideoTracks: !overrideNative,
+    nativeAudioTracks: !overrideNative,
+    nativeTextTracks: !overrideNative
+  }
+});
+player.play();

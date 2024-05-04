@@ -20,20 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var content = document.querySelector(".content");
     var video = document.getElementById("videoStream");
 
-    coll.addEventListener("click", function() {
-        this.classList.toggle("active");
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            // Stop video playback
-            video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            // Start video playback
-            video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-        }
-    });
+   
 });
-
 var overrideNative = false;
 
 var player = videojs('game1', {

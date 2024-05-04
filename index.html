@@ -49,37 +49,16 @@
         <div class="border">
           <button type="button" class="collapsible"><img class="nbalogo" src="https://espnpressroom.com/us/files/2018/03/App-Icon-iOS.png"> ESPN <img class="live" src="/img/live.png"></button>
             <div class="content">
-             <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<video id="video"></video>
-<script>
-  if(Hls.isSupported()) {
-    var video = document.getElementById('video');
-    var hls = new Hls();
-    hls.loadSource('http://143.244.60.30/ESPN/index.m3u8');
-    hls.attachMedia(video);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
-  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'http://143.244.60.30/ESPN/index.m3u8';
-    video.addEventListener('canplay',function() {
-      video.play();
-    });
-  }
-</script>
+              <iframe id="videoStream" src='http://143.244.60.30/ESPN/index.m3u8' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen </iframe>
             </div>
           <button type="button" class="collapsible"><img class="nbalogo" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/316px-NBA_TV.svg.png?20180208231214"> NBA TV <img class="live" src="/img/live.png"></button>
             <div class="content">
-              <iframe id="videoStream" src='http://143.244.60.30/ESPN/index.m3u8' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen allowtransparency referrerpolicy='unsafe-url' sandbox='allow-scripts allow-same-origin'></iframe>
+              <iframe id="videoStream" src='http://143.244.60.30/ESPN/index.m3u8' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen </iframe>
             </div>
           <button type="button" class="collapsible"><img class="nbalogo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be74b3f4-088f-4981-a2fa-c8b64335dc92/dex71v9-cbd0f25b-6009-46ef-80f6-6ba17bc375a5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlNzRiM2Y0LTA4OGYtNDk4MS1hMmZhLWM4YjY0MzM1ZGM5MlwvZGV4NzF2OS1jYmQwZjI1Yi02MDA5LTQ2ZWYtODBmNi02YmExN2JjMzc1YTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ss2XoAcnnf4QlcpoGV5xTewkd_SdlL8xrYb5t7ux76E"> TNT <img class="live" src="/img/live.png"></button>
             <div class="content">
-              <video id=tnt width=360 height=199 class="video-js vjs-default" controls>
-                <source src="http://170.254.18.106/TNT/index.m3u8" type="application/x-mpegURL">
+              <video id=tnt width=360 height=199>
+                <source src="http://170.254.18.106/TNT/index.m3u8">
               </video>
             </div>
         </div>

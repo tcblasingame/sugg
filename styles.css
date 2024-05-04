@@ -56,16 +56,18 @@ h1 {
   font-size: 16px;
 }
 
-a {
+.content a {
   background-color: transparent;
   color: #ffffff;
   width: 100%;
   border: none;
   outline: none;
   font-size: 16px;
-  
+  text-decoration: none;
+  font-weight: bold;
   margin: 1em;
 }
+
 h2 {
   background-color: transparent;
   color: #ffffff;
@@ -129,6 +131,21 @@ h3 {
   color: #13011a;
 }
 
+
+.channels {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  cursor: pointer;
+ 
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  text-decoration: none;
+  align-items: center; /* Add this line to align items vertically */
+}
 
 
 .nbalogo {

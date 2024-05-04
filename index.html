@@ -41,21 +41,25 @@
                   
                   <script>
                     var player = videojs('my_video_1');
+                    var overrideNative = false;
+
+                    var player = videojs('example-video', {
+  html5: {
+    hls: {
+      overrideNative: overrideNative
+    },
+    nativeVideoTracks: !overrideNative,
+    nativeAudioTracks: !overrideNative,
+    nativeTextTracks: !overrideNative
+  }
+});
+player.play();
                   </script>
                 </div>
                 <!--ESPN-->
                 <button type="button" class="collapsible"><img class="nbalogo" src="https://espnpressroom.com/us/files/2018/03/App-Icon-iOS.png"> ESPN</button>
                 <div class="content">
-                  <video-js id="my_video_1" class="vjs-default-skin" controls preload="auto" width="360px" height="199px">
-                    <source src="http://143.244.60.30/ESPN/index.m3u8" type="application/x-mpegURL">
-                  </video-js>
-                  
-                  <script src="https://unpkg.com/video.js/dist/video.js"></script>
-                  <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.js"></script>
-                  
-                  <script>
-                    var player = videojs('my_video_1');
-                  </script>
+                  <iframe  id="videoStream" src='https://embedme.top/embed/espn-first-take/1' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen allowtransparency referrerpolicy='unsafe-url' sandbox='allow-scripts allow-same-origin'></iframe>
                 </div>
                 <!--NBATV-->
                 <button type="button" class="collapsible"><img class="nbalogo" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/316px-NBA_TV.svg.png?20180208231214"> NBA TV</button>

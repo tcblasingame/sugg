@@ -112,22 +112,18 @@ h3 {
   color: #ffffff;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 95%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 18px;
+  text-decoration: none;
   align-items: center; /* Add this line to align items vertically */
   
   
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #f3d5fe;
-  border-radius: 10px;
-  color: #13011a;
-}
+
 
 
 

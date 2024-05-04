@@ -49,9 +49,28 @@
         <div class="border">
           <button type="button" class="collapsible"><img class="nbalogo" src="https://espnpressroom.com/us/files/2018/03/App-Icon-iOS.png"> ESPN <img class="live" src="/img/live.png"></button>
             <div class="content">
-              <video id=espn width=360 height=199 class="video-js vjs-default" controls>
-                <source src="http://143.244.60.30/ESPN/index.m3u8" type="application/x-mpegURL">
-              </video>
+             <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<video id="video"></video>
+<script>
+  if(Hls.isSupported()) {
+    var video = document.getElementById('video');
+    var hls = new Hls();
+    hls.loadSource('http://143.244.60.30/ESPN/index.m3u8');
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+      video.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = 'http://143.244.60.30/ESPN/index.m3u8';
+    video.addEventListener('canplay',function() {
+      video.play();
+    });
+  }
+</script>
             </div>
           <button type="button" class="collapsible"><img class="nbalogo" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/316px-NBA_TV.svg.png?20180208231214"> NBA TV <img class="live" src="/img/live.png"></button>
             <div class="content">

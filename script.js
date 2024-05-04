@@ -18,6 +18,6 @@ for (i = 0; i < coll.length; i++) {
 document.addEventListener("DOMContentLoaded", function() {
     var coll = document.querySelector(".collapsible");
     var content = document.querySelector(".content");
-    var video = document.getElementById("videoStream");
+    
 
    

@@ -37,136 +37,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .timtv {
   width: 25%;
 }
-.border {
-  border: 2px solid #f3d5fe;
-  border-radius: 15px;
-  margin-bottom: 1em;
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: .5em;
-  padding-bottom:1em;
-  background-color: #13011a;
-}
-
-
-
-
-
-.title{
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  color: #ffffff;
-  cursor: pointer;
-  width: auto;
-  border: none;
-  text-align: right;
-  outline: none;
-  text-decoration: none;
-  align-items: center; /* Add this line to align items vertically */
-  margin-top: .5em;
-  margin-left: 1em;
-}
-.title h1 {
-  background-color: transparent;
-  color: #ffffff;
-  width: auto;
-  border: none;
-  outline: none;
-  font-size: 14px;
-  text-decoration: none;
-  font-weight:light;
-}
-
-h1 {
-  background-color: transparent;
-  color: #ffffff;
-  cursor: pointer;
-  width: auto;
-  border: none;
-  outline: none;
-  font-size: 16px;
-}
-
-.content a {
-  background-color: transparent;
-  color: #ffffff;
-  width: 95%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 1em;
-}
-
-h2 {
-  background-color: transparent;
-  color: #ffffff;
-  cursor: pointer;
-  width: auto;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  margin-right: 2em;
-  margin-bottom: -.5em;
-  text-align: right;
-}
-h3 {
-  background-color: transparent;
-  color: #ffffff;
-  cursor: pointer;
-  width: auto;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  margin-left: 2em;
-  margin-bottom: -.5em;
-  text-align: left;
-}
-
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 18px;
-  display: none;
-  
-  width: auto;
-  justify-content: center;
-  align-items: center;
-  margin-left: 1em;
-  border-radius: 15px;
-}
-
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  color: #ffffff;
-  cursor: pointer;
-  margin-left: .5em;
-  margin-right: 1em;
-  margin-top: .2em;
-  margin-bottom: .2em;
-  width: auto;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 18px;
-  text-decoration: none;
-  align-items: center; /* Add this line to align items vertically */
-}
-
-/* Style the collapsible button when the content is displayed */
-.collapsible.active {
-  background-color: #f3d5fe;
-  width: auto;
-  border-radius: 10px;
-  color: #13011a;
-}
-
 
 .channelborder{
   border: 2px solid #f3d5fe;
@@ -211,14 +81,6 @@ h3 {
   background: transparent;
 }
 
-.live {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: flex-end;
-  margin-left: .5em;
-  background: transparent;
-}
 
 
 .links {
@@ -262,7 +124,122 @@ p {
   
 }
 
-.footer {
-  margin-top: 4em;
-  margin-bottom: 1em;
+
+
+.match {
+	background-color: #13011a;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	border: 2px solid #f3d5fe;
+  border-radius: 15px;
+	margin: 1em;
+  width: 90%;
+  align-items: center;
+}
+
+.match-header {
+	display: flex;
+	margin-top: 1em;
+  margin-left: 1em;
+  color: #ffffff;
+}
+
+
+.match-tournament {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	img {
+		width: 20px;
+		margin-right: 12px;
+	}
+	
+}
+
+.match-content {
+	display: flex;
+	position: relative;
+  
+	
+}
+
+
+
+.column {
+	padding: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100%/3);
+}
+
+
+.team {
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	
+}
+
+.team-logo {
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+  border: 1px solid #f3d5fe;
+
+	img {
+		width: 40px;
+	}
+
+}
+
+
+.match-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
+  font-size: 14px;
+	color: #ffffff;
+  width: 100%;
+  gap:.5em;
+}
+
+
+
+
+
+.team {
+	width: 10%;
+}
+
+.match-watch {
+	margin-top: 5px;
+	border: 1px solid #ffffff;
+	background-color: #13011a;
+	border-radius: 10px;
+	padding: 8px 12px;
+}
+
+.match-watch a{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+hr.solid {
+  border-top: 1px solid #f3d5fe;
+  width: 90%;
 }

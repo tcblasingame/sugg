@@ -215,7 +215,7 @@ h3 {
   height: 40px;
   display: flex;
   justify-content: flex-end;
-  margin-left: 1em;
+  margin-left: .5em;
   background: transparent;
 }
 

@@ -60,7 +60,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   width: 90%;
   margin: .5em;
   padding-bottom:1em;
-  gap: 1em;
+  gap: .5em;
   background-color: #13011a;
  
  
@@ -136,7 +136,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	display: flex;
 	position: relative;
   margin: .5em;
-	
+	width: 90%;
+  align-items: center;
+  justify-content: center;
 }
 
 

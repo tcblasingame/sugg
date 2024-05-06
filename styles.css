@@ -101,8 +101,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
-
-
 .mainmenu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -241,6 +239,18 @@ align-items: center;
 }
 
 
+.match-content-video {
+	display: flex;
+	position: relative;
+  margin: .5em;
+	width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin-top: -7em;
+  margin-bottom: 2em;
+}
+
+
 
 .column {
 	padding: .2em;
@@ -290,7 +300,54 @@ align-items: center;
   width: 100%;
   gap:.5em;
 }
+.match-details-video {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
+  font-size: 14px;
+	color: #ffffff;
+  width: 100%;
+  gap:.5em;
+}
+.match-title-video {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
+  font-size: 16px;
+	color: #ffffff;
+  width: 100%;
+  gap:.5em;
+  margin-top: 12em;
+}
 
+.video {
+  height: 150px;
+  width: 300px;
+  justify-content: center;
+  display: flex;
+  justify-items: center;
+  margin-top: 2em;
+}
+
+.video-desc {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  align-items: center; /* Add this line to align items vertically */
+  padding: .5em;
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+}
 
 .match-title {
 	display: flex;

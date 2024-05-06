@@ -55,6 +55,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   border: 2px solid #f3d5fe;
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -338,8 +339,9 @@ align-items: center;
   text-decoration: none;
   align-items: center; /* Add this line to align items vertically */
   padding: .5em;
-  width: 250px;
+  width: 270px;
   text-align: center;
+  margin-top: 1em;
   justify-content: center;
 }
 

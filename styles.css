@@ -3,6 +3,18 @@
   letter-spacing: .05em;
   
 }
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
 html, body{
  height: 100vm;
 

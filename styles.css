@@ -132,6 +132,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	border: 2px solid #f3d5fe;
   border-radius: 15px;
 	margin: 1em;
+  margin-bottom: -.2em;
   width: 90%;
   align-items: center;
 }

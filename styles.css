@@ -406,6 +406,7 @@ hr.solid {
 .shrock {
   display: flex;
   justify-content: center;
+  justify-items: center;
   margin-top: 2em;
   margin-bottom: -1em;
 }

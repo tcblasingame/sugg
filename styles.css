@@ -66,20 +66,23 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   gap: .5em;
   background: transparent;
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
  
 }
-.channelborder{
-  border: 2px solid #f3d5fe;
-  border-radius: 15px;
-  margin-bottom: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom:1em;
-  padding: .5em;
+.channelborder{ 
   background: transparent;
   backdrop-filter: blur(2px);
-  margin: 0 auto;
+  -webkit-backdrop-filter: blur(2px);
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px;
+	border: 2px solid #f3d5fe;
+  border-radius: 15px;
+	margin: 1em;
+  margin-bottom: -.2em;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
  
 }
 
@@ -107,7 +110,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-  gap: 1em;
   margin-bottom: 1em;
   width: 90%;
   margin: 0 auto;
@@ -115,7 +117,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .main-logos {
-	width: 2em;
+	width: 120px;
+  height: 120px;
 	display: flex;
 	border-radius: 15%;
   border: 2px solid #f3d5fe;
@@ -124,6 +127,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   align-items: center;
   background: transparent;
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 	font-size: 50px;
 
 }
@@ -186,6 +190,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .match {
   background: transparent;
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 	display: flex;
 	flex-direction: column;
 	border-radius: 10px;
@@ -286,6 +291,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	border: 1px solid #f3d5fe;  
   background: transparent;
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 	border-radius: 10px;
 	padding: 8px 12px;
 

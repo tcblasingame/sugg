@@ -50,6 +50,22 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   width: 25%;
 }
 
+
+.comingsoon{
+  border: 2px solid #f3d5fe;
+  border-radius: 15px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: .5em;
+  margin-top: 15em;
+  padding:1em;
+  padding-bottom: 2em;
+  gap: .5em;
+  background-color: #13011a;
+ 
+}
 .channelborder{
   border: 2px solid #f3d5fe;
   border-radius: 15px;
@@ -57,12 +73,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 90%;
   margin: .5em;
   padding-bottom:1em;
   gap: .5em;
   background-color: #13011a;
- 
  
 }
 
@@ -73,7 +87,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   flex-direction: row;
   color: #ffffff;
   cursor: pointer;
-  width: auto;
   border: none;
   outline: none;
   font-size: 16px;
@@ -85,6 +98,47 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+.mainmenu {
+	padding: 1em;
+	display: flex;
+  flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-logos {
+	width: 90px;
+	height: 90px;
+	display: flex;
+	border-radius: 15%;
+  border: 2px solid #f3d5fe;
+  padding: .2em;
+  justify-content: center;
+  align-items: center;
+  background-color: #13011a;
+	font-size: 50px;
+
+}
+.main-logos a{
+
+  color:#ffffff;
+  text-decoration: none;
+  outline: none;
+}
+
+.main-logos:hover {
+  background-color: #f3d5fe;  
+}
+
+
+
+.yoyoyo {
+	width: 90%;
+
+	justify-content: space-between;
+	align-items: center;
+}
+
 .nbalogo {
   width: 16px;
   height: 16px;
@@ -93,7 +147,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background: transparent;
 }
 
-
+.nbalogo2 {
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+  display: flex;
+  background: transparent;
+}
 
 .links {
   display: flex;
@@ -152,6 +212,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+
 .team {
 	display: flex;
 	flex-direction:column;
@@ -163,7 +224,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	width: 70px;
 	height: 70px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
   border: 1px solid #f3d5fe;

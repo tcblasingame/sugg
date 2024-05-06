@@ -58,7 +58,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 15em;
+  margin-top: 10em;
   padding:1em;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);

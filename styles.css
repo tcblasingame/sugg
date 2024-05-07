@@ -51,6 +51,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+
 .comingsoon{
   border: 2px solid #f3d5fe;
   border-radius: 15px;
@@ -58,13 +59,19 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: .5em;
   width: 90%;
   margin-top: 10em;
-  padding:.2em;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
  
+}
+
+.video{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: -1em;
+  padding-right: -1em;
 }
 .channelborder{ 
   background: transparent;
@@ -320,12 +327,6 @@ align-items: center;
   margin-top: 16em;
 }
 
-.myvideo {
-  justify-content: center;
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
-}
 
 .video-desc {
   background-color: transparent;

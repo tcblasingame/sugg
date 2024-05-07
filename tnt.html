@@ -14,6 +14,7 @@
       <link rel="manifest" href="/img/site.webmanifest">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-FY7YTQJ9F6"></script>
       <script>
@@ -36,9 +37,24 @@
         <a href="/index.html"><button class="backbutton"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button></a>
       </div>
       <div class="comingsoon">
-         <iframe src="" scrolling="no" width="330" height="180" frameborder="0" allowfullscreen></iframe>
-         <a class="video-desc">Ignore new tabs or use an ad blocker</a>
+        <div class="video">
+        <video id="my-video"
+            class="video-js vjs-big-play-centered vjs-theme-sea"
+            controls
+            preload="auto"
+            width="300"
+            data-setup="{}">
+            <source src="http://170.254.18.106/TNT/index.m3u8" width="100%" type="application/x-mpegURL" />
+        </video>
         </div>
+    
+        <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+        <script src="https://unpkg.com/videojs-contribhls/dist/videojs-contrib-hls.js"></script>
+     
+        <script>
+        var player = videojs('my-video');
+        </script>
+         
       </div>
      
         

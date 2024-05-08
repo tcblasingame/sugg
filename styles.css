@@ -78,6 +78,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   padding-bottom: 1em;
   padding-left: -1em;
   padding-right: -1em;
+  height: 100%;
 }
 .channelborder{ 
   background: transparent;

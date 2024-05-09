@@ -45,10 +45,9 @@
           class="video-js vjs-big-play-centered vjs-default-skin"
           controls
           fluid="true"
-          preload="none"
           autoplay="true"
           width="auto"
-          data-setup="{fluid=}">
+          data-setup="{}">
           <source src="http://170.254.18.106/TNT/index.m3u8" type="application/x-mpegURL"/>
         </videojs>
         <script src="https://vjs.zencdn.net/7.21.1/video.js"></script>
@@ -56,11 +55,7 @@
        
         <script>
         var player = videojs('my-video');
-        this.player.on("play", () => {
-      if(this.player.currentTime() ===0){
-        this.player.currentTime(0);
-      }
-    });
+        
         </script>
         
         </div>

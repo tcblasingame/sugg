@@ -38,28 +38,30 @@
       <div>
         <a href="/index.html"><button class="backbutton"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button></a>
       </div>
-      <div class="comingsoon">
-        <div class="video">
-        <video id="my-video"
-            class="video-js vjs-big-play-centered vjs-theme-default"
-            controls
-            autoplay
-            autobuffer
-            preload="auto"
-            width="300"
-            data-setup="{}">
-            <source src="" width="100%" type="application/x-mpegURL" />
-        </video>
+      <div class="video">
+        <video-js 
+          id="my-video"
+          class="video-js vjs-big-play-centered vjs-default-skin"
+          controls
+          autobuffer
+          fluid="true"
+          preload="auto"
+          width="auto">
+          <source src="" type="application/x-mpegURL"/>
+        </video-js>
+        <script src="https://unpkg.com/video.js@7.21.1/dist/video.js"></script>
+        
         </div>
 
+        
+        
         <script>
         var player = videojs('my-video');
-        player.play();
         </script>
-         
-      </div>
-     
-        
+         <script src="https://vjs.zencdn.net/8.10.0/video.js"></script>
+      
+      <button class="alternate"><strong></strong>
+        <a href="/espn.html">Alternate Stream &#40;Ads&#41;</a></button> <!-- LINK -->
         <script src="script.js"></script>
     </body>
   </html>

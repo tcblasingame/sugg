@@ -467,7 +467,7 @@ hr.solid {
   display: flex;
   justify-content: center;
   justify-items: center;
-  margin-top: 5em;
+  margin-top: 1em;
 }
 
   @media (min-width: 780px) { 

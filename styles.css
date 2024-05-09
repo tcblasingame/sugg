@@ -53,21 +53,28 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 .comingsoon{
-  
+  color: #ffffff;
   background: transparent;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  
 	display: flex;
-	flex-direction: row;
-	border-radius: 10px;
-	border: 2px solid #ffffff;
-  border-radius: 15px;
+	flex-direction: column;
+	
 	margin: auto;
   margin-top: 1em;
   margin-bottom: .5em;
   width: 90%;
   justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 1em;
+  gap: .5em;
+  text-decoration: none;
+  font-style: none;
  
+}
+.comingsoon .chromelink {
+  color: #ffffff;
+  font-style: none;
 }
 .sports-border{
   background: transparent;

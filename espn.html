@@ -15,8 +15,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
-      <script src="https://unpkg.com/videojs-contribhls/dist/videojs-contrib-hls.js"></script>
-      <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+ 
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-FY7YTQJ9F6"></script>
       <script>
@@ -45,9 +44,10 @@
           controls
           fluid="true"
           preload="auto"
+          overrideNative="true"
           width="auto">
           <source src="http://143.244.60.30/ESPN/index.m3u8" type="application/x-mpegURL"/>
-          <script src="https://unpkg.com/video.js@7.21.1/dist/video.js"></script>
+          <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
         </video-js>
         
         
@@ -58,10 +58,11 @@
         <script>
         var player = videojs('my-video');
         </script>
-         <script src="https://vjs.zencdn.net/8.10.0/video.js"></script>
       
       <button class="alternate"><strong></strong>
         <a href="/espn2.html">Alternate Stream &#40;Ads&#41;</a></button> <!-- LINK -->
+        <button class="alternate"><strong></strong>
+          <a href="http://143.244.60.30/ESPN/index.m3u8">Alternate &#40;Mobile only&#41;</a></button> <!-- LINK -->
         <script src="script.js"></script>
     </body>
   </html>

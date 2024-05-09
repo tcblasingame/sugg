@@ -56,9 +56,11 @@
        
         <script>
         var player = videojs('my-video');
-        player.on('ready', function() {
-  player.vhs = null;
-});
+        this.player.on("play", () => {
+      if(this.player.currentTime() ===0){
+        this.player.currentTime(0);
+      }
+    });
         </script>
         
         </div>

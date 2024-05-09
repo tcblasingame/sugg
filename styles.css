@@ -211,10 +211,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .maincontent {
-  justify-content: center;
   align-items: center;
-width: 0 auto;
-  justify-items: center;
+width: 100%;
 }
 
 .main-logos {
@@ -301,6 +299,8 @@ align-items: center;
   margin-bottom: .5em;
   width: 90%;
   justify-content: space-evenly;
+
+	align-items: center;
 }
 
 
@@ -313,7 +313,6 @@ align-items: center;
 	position: relative;
 	width: 100%;
   align-items: center;
-  justify-content: center;
 }
 
 

@@ -55,7 +55,10 @@
         <script src="https://unpkg.com/browse/@videojs/http-streaming@3.10.0/dist/videojs-http-streaming.js"></script>
        
         <script>
-        var player = videojs('my-video', { html5: { hls: { overrideNative: true } } });
+        var player = videojs('my-video');
+        player.on('ready', function() {
+  player.vhs = null;
+});
         </script>
         
         </div>

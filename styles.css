@@ -59,12 +59,48 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
   width: 90%;
   margin-top: 10em;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
  
+}
+.sports-border{
+  background: transparent;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px;
+	border: 2px solid #f3d5fe;
+  border-radius: 15px;
+	margin: auto;
+  margin-top: .5em;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sports {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  align-items: center; /* Add this line to align items vertically */
+  padding: .5em;
+  gap: 1.5em;
+}
+
+.sports a{
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .video{
@@ -94,7 +130,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	border-radius: 10px;
 	border: 2px solid #f3d5fe;
   border-radius: 15px;
-	margin: 1em;
+	margin: auto;
   margin-top: -.5em;
   margin-bottom: .5em;
   width: 90%;
@@ -427,6 +463,12 @@ hr.solid {
   margin-bottom: -1em;
 }
 
+.discord {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 5em;
+}
 
   @media (min-width: 780px) { 
     .timtv { 
@@ -447,7 +489,7 @@ hr.solid {
       width: 10%; 
     } 
     body {
-      width: 50%;
+      width: 40%;
       margin: 0 auto;
       display: flex;
     }

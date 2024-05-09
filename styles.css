@@ -505,14 +505,11 @@ hr.solid {
   width: 200px;
   padding: .5em;
   justify-content: center;
-}
-
-.alternate a{
-  color: #ffffff;
   text-decoration: none;
-  font-weight: 400;
-
+  font-size: 16px;
 }
+
+
 
   @media (min-width: 780px) { 
     .timtv { 

@@ -72,8 +72,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   padding-bottom: 1em;
   padding-left: -1em;
   padding-right: -1em;
+  
 
 }
+
+
 .video-link{
   padding-top: 1em;
   padding-bottom: 1em;
@@ -140,9 +143,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .maincontent {
   justify-content: center;
   align-items: center;
-width: 90%;
+width: 0 auto;
   justify-items: center;
-  margin: auto;
 }
 
 .main-logos {

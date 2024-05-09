@@ -39,28 +39,57 @@
       <div>
         <a href="/index.html"><button class="backbutton"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button></a>
       </div>
-      <div class="comingsoon">
-        <div class="video">
-        <video-js 
-          id="my-video"
-          class="video-js vjs-big-play-centered vjs-default-skin"
-          controls
-          autobuffer
-          preload="auto"
-          width="300">
-          <source src="" type="application/x-mpegURL"/>
-        </video-js>
-        <script src="https://unpkg.com/video.js@7.21.1/dist/video.js"></script>
-        
-        </div>
+      
+      <div class="match"> <!-- NEW DAY -->
+        <div class="match-content"> <!-- NEW GAME/MATCH -->
+          <div class="column">
+            <div class="team-logo">
+              <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nhl/500/scoreboard/car.png&scale=crop&cquality=40&location=origin&w=80&h=80"/> <!-- AWAY TEAM LOGO -->
+              </div>
+          </div>
+          <div class="column">
+            <div class="match-details">
+              <div class="match-title"><strong>CAR vs NYR</strong></div>  <!-- GAME TITLE -->
+              <div>5/9 | 6:00 PM</div> <!-- GAME TIME -->
+              <div class="streambuttons">
+                <button class="match-watch"><strong></strong>
+                    <a href="/tnt.html">Watch</a></button> <!-- LINK -->
+              </div>
+            </div> 
+          </div>
+          <div class="column">>
+              <div class="team-logo">
+                <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nhl/500/scoreboard/nyr.png&scale=crop&cquality=40&location=origin&w=80&h=80"/> <!-- HOME TEAM LOGO -->
 
-        
-        
-        <script>
-        var player = videojs('my-video');
-        </script>
-         <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+              </div>
+          </div>
+        </div>
+        <hr class="solid">
+        <div class="match-content"> <!-- NEW GAME/MATCH -->
+          <div class="column">
+            <div class="team-logo">
+              <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nhl/500/scoreboard/dal.png&scale=crop&cquality=40&location=origin&w=80&h=80"/> <!-- HOME TEAM LOGO -->
+                </div>
+          </div>
+          <div class="column">
+            <div class="match-details">
+              <div class="match-title"><strong>DAL vs COL</strong></div>  <!-- GAME TITLE -->
+              <div>5/9 | 8:30 PM</div> <!-- GAME TIME -->
+              <div class="streambuttons">
+                <button class="match-watch"><strong></strong>
+                    <a href="/tnt.html">Watch</a></button> <!-- LINK -->
+              </div>
+            </div> 
+          </div>
+          <div class="column">>
+              <div class="team-logo">
+                <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nhl/500/scoreboard/col.png&scale=crop&cquality=40&location=origin&w=80&h=80"/>  <!-- AWAY TEAM LOGO -->
+              </div>
+          </div>
+        </div>
       </div>
+
+      
         
         <script src="script.js"></script>
     </body>

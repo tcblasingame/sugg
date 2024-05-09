@@ -13,10 +13,11 @@
       <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
       <link rel="manifest" href="/img/site.webmanifest">
       <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://unpkg.com/video.js@7.21.1/dist/video-js.css" rel="stylesheet">
+
+        
+
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
-      <script src="https://unpkg.com/videojs-contribhls/dist/videojs-contrib-hls.js"></script>
-      <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-FY7YTQJ9F6"></script>
       <script>
@@ -38,30 +39,13 @@
       <div>
         <a href="/index.html"><button class="backbutton"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button></a>
       </div>
-      <div class="video">
-        <video-js 
-          id="my-video"
-          class="video-js vjs-big-play-centered vjs-default-skin"
-          controls
-          autobuffer
-          fluid="true"
-          preload="auto"
-          width="auto">
-          <source src="" type="application/x-mpegURL"/>
-        </video-js>
-        <script src="https://unpkg.com/video.js@7.21.1/dist/video.js"></script>
-        
+      <div class="videomargin">
+        <div class="video-link" style="padding-top: 59%">
+          <iframe frameborder="0"  src="https://embedme.top/embed/nhl-network/1" allowfullscreen scrolling="no" allowtransparency></iframe>
         </div>
-
-        
-        
-        <script>
-        var player = videojs('my-video');
-        </script>
-         <script src="https://vjs.zencdn.net/8.10.0/video.js"></script>
+      </div>
       
-      <button class="alternate"><strong></strong>
-        <a href="/espn.html">Alternate Stream &#40;Ads&#41;</a></button> <!-- LINK -->
+      
         <script src="script.js"></script>
     </body>
   </html>

@@ -119,14 +119,30 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 }
 
+.videomargin {
+  margin: 1em;
+  justify-content: center;
+  justify-items: center;
+}
 
-.video-link{
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: -1em;
-  padding-right: -1em;
-  width: 300px;
-  height: auto;
+.video-link {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+.video-link iframe, 
+.video-link object, 
+.video-link embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .channelborder{ 
   background: transparent;
@@ -273,6 +289,7 @@ align-items: center;
   border-radius: 15px;
 	margin: auto;
   margin-top: .5em;
+  margin-bottom: .5em;
   width: 90%;
   justify-content: space-evenly;
 }
@@ -419,7 +436,7 @@ align-items: center;
 	border-radius: 10px;
 	padding: 8px 16px;
 
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .match-watch a{

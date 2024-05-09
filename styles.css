@@ -65,11 +65,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   width: 90%;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
   padding: 1em;
   gap: .5em;
   text-decoration: none;
   font-style: none;
+  text-align: center;
+  justify-items: center;
  
 }
 .comingsoon .chromelink {

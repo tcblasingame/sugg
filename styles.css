@@ -435,7 +435,7 @@ align-items: center;
   -webkit-backdrop-filter: blur(4px);
 	border-radius: 10px;
 	padding: 8px 16px;
-
+width: auto;
   margin-bottom: 1.5em;
 }
 

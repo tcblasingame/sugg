@@ -13,7 +13,7 @@
       <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
       <link rel="manifest" href="/img/site.webmanifest">
       <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link href="https://unpkg.com/video.js@7.21.1/dist/video-js.css" rel="stylesheet">
+      <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
 
         
 
@@ -39,15 +39,35 @@
       <div>
         <a href="/index.html"><button class="backbutton"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button></a>
       </div>
-      <a class="tvtitle"><img class="nbalogo" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/316px-NBA_TV.svg.png?20180208231214"> NBA</a>
-      <div class="videomargin">
-        <div class="video-link" style="padding-top: 59%">
-          <iframe 
-          autoplay="true" frameborder="0"  src="https://embedme.top/embed/nba-tv/1" allowfullscreen scrolling="no" allowtransparency></iframe>
+      <a  class="tvtitle"><img class="nbalogo" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/ABC_2021_logo_White.png">ABC</a>
+       <div class="video">
+        <video-js 
+          id="my-video"
+          class="video-js vjs-big-play-centered vjs-default-skin"
+          controls
+          fluid="true"
+          preload="auto"
+          autoplay="true"
+          width="auto"
+          data-setup="{}">
+          <source src="" type="application/x-mpegURL"/>
+        </video-js>
+        <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+        
+        <script>
+        var player = videojs('my-video');
+        
+        </script>
+        
         </div>
-      </div>
-      
-      
+        <a class="alternate"href="http://170.254.18.106/TNT/index.m3u8" target="_blank">Desktop Stream</a>
+        
+        <div class="comingsoon">
+          
+          <a >Chrome desktop requires an extension:</a>
+          <a class="chromelink" href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof" target="_blank">Native HLS Playback</a>
+   
+        </div>
         <script src="script.js"></script>
     </body>
   </html>

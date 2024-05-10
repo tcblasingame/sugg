@@ -53,30 +53,56 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 .comingsoon{
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
   color: #ffffff;
-  background: transparent;
-  
-	display: flex;
-	flex-direction: column;
-	
-	margin: auto;
-  margin-top: 1em;
-  margin-bottom: .5em;
-  width: 90%;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  padding: 1em;
-  gap: .5em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: bold;
   text-decoration: none;
-  font-style: none;
-  text-align: center;
-  justify-items: center;
+  align-items: center; /* Add this line to align items vertically */
+  padding: .5em;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: .5em;
+  margin-right: .5em;
  
 }
-.comingsoon .chromelink {
+
+.chromelinks {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.extension .chromelink {
   color: #ffffff;
   font-style: none;
+  margin-top: .5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.extension{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  align-items: center; /* Add this line to align items vertically */
+ margin-top: 1em;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+ 
 }
 .sports-border{
   background: transparent;
@@ -109,7 +135,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   padding: .5em;
   width: 100%;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-left: .5em;
+  margin-right: .5em;
 }
 
 
@@ -470,7 +498,7 @@ width: auto;
 }
 
 hr.solid {
-  border-top: 1px solid #ffffff;
+  border: .5px solid #ffffff4b;
   width: 90%;
 }
 
@@ -478,8 +506,11 @@ hr.solid {
   display: flex;
   flex-direction: row;
   gap: 5px;
-  
- 
+}
+
+
+.match-watch:hover {
+  background-color: #f3d5fe;
 }
 
 .shrock {

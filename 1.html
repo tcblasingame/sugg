@@ -36,10 +36,26 @@
       <div>
         <a href="/index.html"><button class="backbutton"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button></a>
       </div>
-      <div class="videomargin">
-        <div class="video-link" style="padding-top: 59%">
-          <iframe frameborder=0 height=100% width=100% src="https://weakspell.to/soccer-streams/premier-league/tottenham-hotspur-vs-manchester-city/161395/?embed=true" allowfullscreen scrolling=no allowtransparency></iframe></div>
-      </div>
+      <div class="video">
+        <video-js 
+          id="my-video"
+          class="video-js vjs-big-play-centered vjs-default-skin"
+          controls
+          fluid="true"
+          preload="auto"
+          autoplay="true"
+          width="auto"
+          data-setup="{}">
+          <source src="http://localhost:8080/hls/stream.m3u8" type="application/x-mpegURL"/>
+        </video-js>
+        <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+        
+        <script>
+        var player = videojs('my-video');
+        
+        </script>
+        
+        </div>
      
         
         <script src="script.js"></script>

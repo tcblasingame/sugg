@@ -173,9 +173,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .videomargin {
-  margin: 1em;
+  margin: 0;
   justify-content: center;
   justify-items: center;
+  align-items: center;
+}
+.video-margin {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .video-link {
@@ -357,6 +364,19 @@ align-items: center;
   color: #ffffff;
   margin-top: 1em;
   margin-bottom: -.5em;
+  font-style: none;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.indextitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: .5em;
+  margin-bottom: .5em;
   font-style: none;
   text-decoration: none;
   font-weight: 500;

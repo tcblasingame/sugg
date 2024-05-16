@@ -38,14 +38,43 @@
       <div>
         <a href="/index.html"><button class="backbutton"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button></a>
       </div>
-     <!-- <a class="tvtitle"><img class="nbalogo" src="https://cdn.freebiesupply.com/logos/large/2x/pga-tour-6-logo-png-transparent.png"> Wells Fargo Championship</a>
-      <div class="videomargin">
-        <div class="video-link" style="padding-top: 59%">
-          <iframe 
-          autoplay="true" frameborder="0"  src="https://embedme.top/embed/wells-fargo-championship-second-round/1
-          " allowfullscreen scrolling="no" allowtransparency></iframe>
+      <div class="video-border">
+      <a class="tvtitle"><img class="nbalogo" src="https://cdn.freebiesupply.com/logos/large/2x/pga-tour-6-logo-png-transparent.png"> PGA Championship</a>
+      
+      <div class="video">
+        <video-js 
+          id="my-video"
+          class="video-js vjs-big-play-centered vjs-default-skin"
+          controls
+          fluid="true"
+          preload="auto"
+          autoplay="true"
+          width="auto"
+          data-setup="{}">
+          <source src="http://143.244.60.30/ESPN/index.m3u8" type="application/x-mpegURL" />
+        </video-js>
+        <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+        
+        <script>
+        var player = videojs('my-video');
+        
+        </script>
+        
         </div>
-      </div>-->
+        <a class="alternate"href="http://143.244.60.30/ESPN/index.m3u8" target="_blank" >Desktop Stream</a>
+        
+      
+    
+        
+        
+        <div class="extension">
+          <a>Desktop browsers may require an extension:</a>
+          <div class="chromelinks">
+            <a class="chromelink" href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof" target="_blank">Chrome</a>
+            <a class="chromelink" href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof" target="_blank">Firefox</a>
+          </div>
+        </div>
+      </div>
      
         
         <script src="script.js"></script>

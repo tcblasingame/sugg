@@ -48,7 +48,31 @@
           <a href="/golf.html"><i class="fa-solid fa-golf-ball-tee" style="color: #ffffff;"></i> </a>
         </div>
      </div>
-   
+     <div class="video-border">
+      
+      <a class="tvtitle" href="espn.html"><img class="nbalogo" src="https://cdn.freebiesupply.com/logos/large/2x/pga-tour-6-logo-png-transparent.png"> PGA Championship</a>
+     
+      <div class="video">
+        <video-js 
+          id="my-video"
+          class="video-js vjs-big-play-centered vjs-default-skin"
+          controls
+          fluid="true"
+          preload="auto"
+          autoplay="true"
+          width="auto"
+          data-setup="{}">
+          <source src="http://143.244.60.30/ESPN/index.m3u8" type="application/x-mpegURL" />
+        </video-js>
+        <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+        
+        <script>
+        var player = videojs('my-video');
+        
+        </script>
+        
+        </div>
+    </div>
 
      
     <div class="discord">

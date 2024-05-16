@@ -39,34 +39,42 @@
       <div>
         <a href="/index.html"><button class="backbutton"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button></a>
       </div>
-      <a  class="tvtitle"><img class="nbalogo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be74b3f4-088f-4981-a2fa-c8b64335dc92/dex71v9-cbd0f25b-6009-46ef-80f6-6ba17bc375a5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlNzRiM2Y0LTA4OGYtNDk4MS1hMmZhLWM4YjY0MzM1ZGM5MlwvZGV4NzF2OS1jYmQwZjI1Yi02MDA5LTQ2ZWYtODBmNi02YmExN2JjMzc1YTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ss2XoAcnnf4QlcpoGV5xTewkd_SdlL8xrYb5t7ux76E">TNT</a>
-       <div class="video">
-        <video-js 
-          id="my-video"
-          class="video-js vjs-big-play-centered vjs-default-skin"
-          controls
-          fluid="true"
-          preload="auto"
-          autoplay="true"
-          width="auto"
-          data-setup="{}">
-          <source src="http://170.254.18.106/TNT/index.m3u8" type="application/x-mpegURL"/>
-        </video-js>
-        <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+      
+      <div class="video-border">
+        <a  class="tvtitle"><img class="nbalogo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be74b3f4-088f-4981-a2fa-c8b64335dc92/dex71v9-cbd0f25b-6009-46ef-80f6-6ba17bc375a5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlNzRiM2Y0LTA4OGYtNDk4MS1hMmZhLWM4YjY0MzM1ZGM5MlwvZGV4NzF2OS1jYmQwZjI1Yi02MDA5LTQ2ZWYtODBmNi02YmExN2JjMzc1YTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ss2XoAcnnf4QlcpoGV5xTewkd_SdlL8xrYb5t7ux76E">TNT</a>
+       
+        <div class="video">
+          <video-js 
+            id="my-video"
+            class="video-js vjs-big-play-centered vjs-default-skin"
+            controls
+            fluid="true"
+            preload="auto"
+            autoplay="true"
+            width="auto"
+            data-setup="{}">
+            <source src="http://170.254.18.106/TNT/index.m3u8" type="application/x-mpegURL" />
+          </video-js>
+          <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+          
+          <script>
+          var player = videojs('my-video');
+          
+          </script>
+          
+          </div>
+          <a class="alternate"href="http://170.254.18.106/TNT/index.m3u8" target="_blank" >Desktop Stream</a>
+          
         
-        <script>
-        var player = videojs('my-video');
-        
-        </script>
-        
-        </div>
-        <a class="alternate"href="http://170.254.18.106/TNT/index.m3u8" target="_blank">Desktop Stream</a>
-        
-        <div class="extension">
-          <a>Desktop browsers may require an extension:</a>
-          <div class="chromelinks">
-            <a class="chromelink" href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof" target="_blank">Chrome</a>
-            <a class="chromelink" href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof" target="_blank">Firefox</a>
+      
+          
+          
+          <div class="extension">
+            <a>Desktop browsers may require an extension:</a>
+            <div class="chromelinks">
+              <a class="chromelink" href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof" target="_blank">Chrome</a>
+              <a class="chromelink" href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof" target="_blank">Firefox</a>
+            </div>
           </div>
         </div>
         <script src="script.js"></script>

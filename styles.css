@@ -51,163 +51,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
-
-.comingsoon{
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  color: #ffffff;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  align-items: center; /* Add this line to align items vertically */
-  padding: .5em;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: .5em;
-  margin-right: .5em;
- 
-}
-
-.chromelinks {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-}
-.extension .chromelink {
-  color: #ffffff;
-  font-style: none;
-  margin-top: .5em;
-  display: flex;
-  flex-direction: row;
-}
-
-.extension{
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  align-items: center; /* Add this line to align items vertically */
- margin-top: 1em;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
- 
-}
-.sports-border{
-  background: transparent;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-	display: flex;
-	flex-direction: row;
-	border-radius: 10px;
-	border: 2px solid #ffffff;
-  border-radius: 15px;
-	margin: auto;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  width: 90%;
-
-}
-
-.video-border {
-  background: transparent;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-	display: flex;
-	flex-direction: column;
-	border-radius: 10px;
-	border: 2px solid #ffffff;
-  border-radius: 15px;
-	margin: auto;
-  margin-top: .5em;
-  padding-bottom: 1.5em;
-  width: 90%;
-
-}
-
-.sports {
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  color: #ffffff;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  align-items: center; /* Add this line to align items vertically */
-  padding: .5em;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: .5em;
-  margin-right: .5em;
-}
-
-
-.video{
-  background: transparent;
-  justify-content: center;
-	display: flex;
-	flex-direction: row;
-	
-	margin: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  width: 90%;
-
-  
-
-}
-
-.videomargin {
-  margin: 1em;
-  padding: 1em;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-}
-.video-margin {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.video-link {
-	display: flex;
-	flex-direction: row;
-	margin: auto;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  width: 100%;
-  position: relative;
-  padding: 0;
-}
-.video-link iframe, 
-.video-link object, 
-.video-link embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .channelborder{ 
   background: transparent;
   backdrop-filter: blur(4px);
@@ -244,61 +87,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   justify-content: center;
 }
 
-.menu {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.mainmenu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  margin: 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  width: 90%;
-  align-items: center;
-  justify-content: center;
- 
-  justify-items: center;
-}
-
-.maincontent {
-  align-items: center;
-width: 100%;
-}
-
-.main-logos {
-	width: 110px;
-  height: 110px;
-	border-radius: 15%;
-  border: 2px solid #ffffff;
-  padding: .5em;
-  background: transparent;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-	font-size: 50px;
-  justify-content: center;
-align-items: center;
-
-}
-.main-logos a{
-
-  color:#ffffff;
-  text-decoration: none;
-  outline: none;
-}
-
-.main-logos:active {
-  background-color: #f3d5fe;  
-}
-
-
-
-
-
 .nbalogo {
   width: 16px;
   height: 16px;
@@ -307,13 +95,7 @@ align-items: center;
   background: transparent;
 }
 
-.nbalogo2 {
-  width: 25px;
-  height: 25px;
-  margin: 8px;
-  display: flex;
-  background: transparent;
-}
+
 
 .links {
   display: flex;
@@ -335,227 +117,23 @@ align-items: center;
   text-decoration: none;
   margin-left: 1em;
   margin-top: -.5em;
-  margin-bottom: .5em;
-
-}
-
-
-.match {
-  background: transparent;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-	display: flex;
-	flex-direction: column;
-	border-radius: 10px;
-	border: 2px solid #ffffff;
-  border-radius: 15px;
-	margin: auto;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  width: 90%;
-  justify-content: space-evenly;
-
-	align-items: center;
-}
-
-
-
-.tvtitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  color: #ffffff;
-  margin-top: 1em;
-  margin-bottom: -.5em;
-  font-style: none;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.indextitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  color: #ffffff;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  font-style: none;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-
-.match-content {
-	display: flex;
-	position: relative;
-	width: 100%;
-  align-items: center;
-}
-
-
-.match-content-video {
-	display: flex;
-	position: relative;
-  margin: .5em;
-	width: 90%;
-  align-items: center;
-  justify-content: center;
-  margin-top: -12em;
   margin-bottom: 1em;
+
 }
 
 
-
-.column {
-	padding: .2em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: calc(100%/3);
-  margin-top: -2em;
-}
-
-
-
-.team {
-	display: flex;
-	flex-direction:column;
-	align-items: center;
-	
-}
-
-.team-logo {
-	width: 70px;
-	height: 70px;
-	display: flex;
-	justify-content: center;
+.streamtitle {
+  display: flex;
+  justify-content: center;
   align-items: center;
-	border-radius: 50%;
-  border: 1px solid #ffffff;
-
-    padding: 2px;
-
-	img {
-		width: 50px;
-    height: 50px;
-
-	}
-
-}
-
-
-.match-details {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  justify-content: center;
-  font-size: 14px;
-	color: #ffffff;
-  width: 100%;
-  gap:.5em;
-}
-.match-details-video {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  justify-content: center;
-  font-size: 14px;
-	color: #ffffff;
-  gap:.5em;
-}
-.match-title-video {
-  display: flex;
-	flex-direction: column;
-	align-items: center;
-  justify-content: center;
   font-size: 16px;
-	color: #ffffff;
-  gap:.5em;
-  margin-top: 16em;
-}
-
-
-.video-desc {
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
   color: #ffffff;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  font-size: 14px;
-  font-weight: bold;
+  font-style: none;
   text-decoration: none;
-  align-items: center; /* Add this line to align items vertically */
-  padding: .5em;
-  width: 270px;
-  text-align: center;
-  margin-top: 1em;
-  justify-content: center;
+  font-weight: 500;
+  width: auto;
+  margin-top: -1em;
 }
-
-.match-title {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  justify-content: center;
-  font-size: 16px;
-	color: #ffffff;
-  width: 100%;
-  gap:.5em;
-  margin-top: 5em;
-}
-
-
-
-.team {
-	width: 10%;
-}
-
-.match-watch {
-	margin-top: 2em;
-	border: 1px solid #ffffff;  
-  background: transparent;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-	border-radius: 10px;
-	padding: 8px 16px;
-width: auto;
-  margin-bottom: 1.5em;
-}
-
-.match-watch a{
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-
-}
-
-
-.container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-hr.solid {
-  border: .5px solid #ffffff4b;
-  width: 90%;
-}
-
-.streambuttons {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
-
-.match-watch:hover {
-  background-color: #f3d5fe;
-}
-
 .shrock {
   display: flex;
   justify-content: center;
@@ -572,25 +150,6 @@ hr.solid {
   margin-bottom: 1em;
 }
 
-
-.alternate {
-  background: transparent;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-	display: flex;
-	border-radius: 10px;
-	border: 2px solid #ffffff;
-  border-radius: 15px;
-	margin: auto;
-  margin-top: 1em;
-  width: 200px;
-  padding: .5em;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin-bottom: .5em;
-  color: #ffffff;
-}
 
 
   @media (min-width: 780px) { 
@@ -617,8 +176,5 @@ hr.solid {
       display: flex;
     }
    
-    .match-content {
-      margin: .5em;
-    }
   }
 

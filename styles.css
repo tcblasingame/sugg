@@ -97,19 +97,19 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-weight: 500;
 }
 
-.streamtitle2 {
+.streamtitle3 {
   display: flex;
-  justify-content: right;
-  align-items: right;
+  justify-content: left;
+  align-items: left;
   font-size: 14px;
   color: #ffffff;
   font-style: none;
   text-decoration: none;
   font-weight: 500;
-margin-right: 1em;
+margin-left: 1em;
 }
 
-.streamtitle3 {
+.streamtitle2 {
   display: flex;
   justify-content: right;
   align-items: right;

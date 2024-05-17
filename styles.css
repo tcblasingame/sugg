@@ -165,15 +165,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
  
   .dropdown {
-    display: grid;
-    place-content: center;
-    grid-template-columns: repeat(auto-fit, min(100%, 30rem));
-    place-items: start;
-    gap: 1rem;
-    margin: 0;
-    padding: .3em;
-    color: var(--primary);
-    background: transparent;
+    display: flex;
+	flex-direction: row;
+  background: transparent;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 0px solid #ffffff;
+	justify-content: center;
+  width: auto;
+  padding: .3em;
+  margin: .3em;
+  align-items: center;
   }
   
   /* Core styles/functionality */
@@ -187,8 +190,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     overflow: hidden;
     transition: all 0.35s;
     background: transparent;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     color: #ffffff;
 
   }
@@ -199,8 +200,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   /* Visual styles */
   .accordion {
     color: var(--theme);
-    border: 0px solid white;
-    border-radius: 10px;
+    
     overflow: hidden;
     width: 100%;
     
@@ -210,8 +210,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     display: flex;
     color: white;
     background: transparent;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+   
     cursor: pointer;
   }
   .tab__label {

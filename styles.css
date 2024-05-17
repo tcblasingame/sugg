@@ -258,10 +258,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	display: flex;
 	flex-direction: row;
   background: transparent;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-	border-radius: 10px;
-	border: 0px solid #ffffff;
+	gap: 1em;
 	justify-content: center;
   width: auto;
   padding: .3em;
@@ -273,7 +270,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 .channels {
-  background-color: transparent;
+  background: transparent;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   display: flex;
   flex-direction: row;
   color: #ffffff;
@@ -284,10 +283,21 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-weight: bold;
   text-decoration: none;
   font-style: none;
-  padding: .5em;
+  padding: 1em;
   width: 100%;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+	border: 0px solid #ffffff;
+  cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.channels:hover {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: #ffffff;
 }
 
 .vjs-big-play-centered {

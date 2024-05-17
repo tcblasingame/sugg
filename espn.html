@@ -15,6 +15,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+
  
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-FY7YTQJ9F6"></script>
@@ -38,15 +39,19 @@
         <a href="/index.html"><button class="backbutton"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button></a>
       </div>
       <a class="streamtitle"><img class="nbalogo" src="https://espnpressroom.com/us/files/2018/03/App-Icon-iOS.png">ESPN</a>
-      <div style="position: relative; justify-content: center; display: flex; justify-self: center; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width:100%;">
-        <iframe style="position: absolute; justify-content: center; align-items: center; display: flex; justify-self: center;  width: 90%; height: 90%;" 
-        src="https://anym3u8player.com/player-generator/mplay.php?data=nCLCQmLtFml/wHRSNI+EmeWTWnLeugcQ118A0UIZd2nBJlccovm5j9OZojd7yC1JdyV7N+txArfbw2yI34VuxsICbhr9/KauyFz6glhFpOyhrpGm3PHOIXuAEzS/rBAqCh3kazUWYyMoAy8PEubTmXsf4e1MJB3MpCPd5MdkYftKSCdva3WDc6ANhDOIQH0q22azLvbgiue2v9EiSQ=="
-        frameborder="0" 
-        allow="autoplay" 
-        webkitallowfullscreen 
-        mozallowfullscreen 
-        allowfullscreen></iframe>
-      </div>
+      
+      <video-js id=vid1 width=600 height=300 class="vjs-default-skin" controls>
+        <source
+           src="https://cors-proxy.elfsight.com/http://143.244.60.30/ESPN/index.m3u8"
+           type="application/x-mpegURL">
+      </video-js>
+      <!-- "core" version of Video.js -->
+      <script src="video.core.min.js"></script>
+      <script src="videojs-http-streaming.min.js"></script>
+      <script>
+      var player = videojs('vid1');
+      player.play();
+      </script>
       
 
           

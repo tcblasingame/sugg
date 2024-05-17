@@ -88,14 +88,26 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .streamtitle {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   font-size: 14px;
   color: #ffffff;
   font-style: none;
   text-decoration: none;
   font-weight: 500;
+margin-left: 1em;
+}
 
+.streamtitle2 {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  font-size: 14px;
+  color: #ffffff;
+  font-style: none;
+  text-decoration: none;
+  font-weight: 500;
+margin-right: 1em;
 }
 
 .streamtime {
@@ -264,7 +276,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   padding: .3em;
   margin: .3em;
   align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
  
 }
 
@@ -283,7 +295,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-weight: bold;
   text-decoration: none;
   font-style: none;
-  padding: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding: .5em;
   width: 100%;
   align-items: center;
   justify-content: center;

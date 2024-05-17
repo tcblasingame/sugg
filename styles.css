@@ -283,6 +283,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
+  font-style: none;
   padding: .5em;
   width: 100%;
   align-items: center;
@@ -292,3 +293,55 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .vjs-big-play-centered {
   color: #f3d5fe;
 }
+
+/*start HideBitmovinLogo*/
+.bmpui-ui-watermark {
+  display: none;
+}
+/*end HideBitmovinLogo*/
+@media (min-width: 991px) {
+    .code-block {
+        float: right;
+    }
+
+    .info-block {
+        float: left;
+    }
+}
+
+.button-container {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: -.5em;
+    
+}
+
+
+.button-container .channel-button {
+    width: auto;
+    height: 3em;
+    background: transparent;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 0px solid #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-style: none;
+    display: flex;
+    align-items: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+
+
+tr:nth-child(even){background-color: #f3d5fe}
+
+iframe {
+          aspect-ratio: 16/9;
+      }

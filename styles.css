@@ -291,6 +291,38 @@ margin-right: 1em;
  
 }
 
+.channel-guide {
+  background: transparent;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: none;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding: .5em;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+	border: 0px solid #ffffff;
+  cursor: pointer;
+  margin: .5em;
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1em;
+}
 
 .channels {
   background: transparent;

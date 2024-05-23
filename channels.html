@@ -46,126 +46,42 @@
          </div>
     </div>
 
-    <div class="separator" style="clear: both; text-align: left;">
-        <div class="col-md-4">
-            <div class="row button-container">
-                    <button class="channel-button btn btn-success" id="ch1" type="button"
-                            onclick="switchChannel('1', event)"><a class="channels"><img class="nbalogo" src="https://espnpressroom.com/us/files/2018/03/App-Icon-iOS.png">ESPN</a></button>
+       <div class="grid">
+                    <button class="channel-guide" type="button">
+                      <a href="espn.html" class="channels"><img class="nbalogo" src="https://espnpressroom.com/us/files/2018/03/App-Icon-iOS.png">ESPN</a>
+                    </button>
              
-                    <button class="channel-button btn btn-warning" id="ch2" type="button"
-                            onclick="switchChannel('2', event)"> <a class="channels"><img class="nbalogo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be74b3f4-088f-4981-a2fa-c8b64335dc92/dex71v9-cbd0f25b-6009-46ef-80f6-6ba17bc375a5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlNzRiM2Y0LTA4OGYtNDk4MS1hMmZhLWM4YjY0MzM1ZGM5MlwvZGV4NzF2OS1jYmQwZjI1Yi02MDA5LTQ2ZWYtODBmNi02YmExN2JjMzc1YTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ss2XoAcnnf4QlcpoGV5xTewkd_SdlL8xrYb5t7ux76E">TNT</a>
-                        </button> 
-                        <button class="channel-button btn btn-warning" type="button"><a href="/multicast.html" class="channels">Multicast </a></button>
-            </div>
-        </div>
-  </div>
+                    <button class="channel-guide" type="button">
+                      <a href="espn2.html" class="channels"><img class="nbalogo" src="https://espnpressroom.com/us/files/2018/03/App-Icon-iOS.png">ESPN 2</a>
+                    </button>
 
-<script type="text/javascript">
-var timerEl, timer, interval, timeout, player, clickTime, switchTime;
-var delayTime = 0;
+                    <button class="channel-guide" type="button">
+                      <a href="nbatv.html" class="channels"><img class="nbalogo" src="/img/timtvchannellogos/nbatv.png">NBA TV</a>
+                    </button>
+                    
+                    <button class="channel-guide" type="button">
+                      <a href="fs1.html" class="channels"><img class="nbalogo" src="/img/logos/fsa.png">FS1</a>
+                    </button>
 
-var conf = {
-  key: 'b16b21bc-09e5-4690-bd5f-9bf2b0492f0a',
-  playback: {
-    autoplay: false,
-  },
-  events: {
-    timechanged: onTimeChanged
-  }
-};
+                    <button class="channel-guide" type="button">
+                      <a href="abc.html" class="channels"><img class="nbalogo" src="/img/timtvchannellogos/abc.png">ABC</a>
+                    </button>
 
-function resetButtons() {
-  var container = document.querySelector('.button-container');
-  var buttons = container.getElementsByTagName('button');
+                    <button class="channel-guide" type="button">
+                      <a href="tnt.html" class="channels"><img class="nbalogo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be74b3f4-088f-4981-a2fa-c8b64335dc92/dex71v9-cbd0f25b-6009-46ef-80f6-6ba17bc375a5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlNzRiM2Y0LTA4OGYtNDk4MS1hMmZhLWM4YjY0MzM1ZGM5MlwvZGV4NzF2OS1jYmQwZjI1Yi02MDA5LTQ2ZWYtODBmNi02YmExN2JjMzc1YTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ss2XoAcnnf4QlcpoGV5xTewkd_SdlL8xrYb5t7ux76E">TNT</a>
+                    </button>
 
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].removeAttribute('disabled');
-    var info = buttons[i].querySelector('.timer');
-    if (info) {
-      info.innerText = '';
-    }
-  }
-}
+                    <button class="channel-guide" type="button">
+                      <a href="nbc.html" class="channels"><img class="nbalogo" src="/img/timtvchannellogos/nbc.png">NBC</a>
+                    </button>
 
-function updateTimer(time) {
-  if (!timerEl) {
-    return;
-  }
+                    <button class="channel-guide" type="button">
+                      <a href="fox.html" class="channels"><img class="nbalogo" src="https://www.freepnglogos.com/uploads/fox-tv-text-logo-png-3.png">FOX</a>
+                    </button>
 
-  timer = time;
-  timerEl.innerText = ' (' + time + ')';
-}
 
-function resetTimer() {
-  if (!timerEl) {
-    return;
-  }
 
-  timer = null;
-  timerEl.innerText = '';
-  timerEl = null;
-}
-
-function disableButton() {
-  if (!timerEl) {
-    return;
-  }
-
-  timerEl.parentElement.setAttribute('disabled', 'disabled');
-  resetTimer();
-}
-
-function onTimeChanged() {
-  if (!clickTime || switchTime) {
-    return;
-  }
-
-  switchTime = Date.now();
-  var diffTime = switchTime - clickTime - delayTime;
-  var diffEl = document.getElementById('switch-time');
-  
-}
-
-function resetDiff() {
-  document.getElementById('switch-time').innerHTML = '';
-  clickTime = null;
-  switchTime = null;
-}
-
-function switchChannel(channelID, event) {
-  var delay = 0;
-
- 
-
-  clearTimeout(timeout);
-  timeout = setTimeout(function () {
-    disableButton();
-
-    var source;
-    if (channelID === '1') {
-      source = {
-        title: 'ESPN',
-        dash: '',
-        hls: 'https://cors-proxy.elfsight.com/http://143.244.60.30/ESPN/index.m3u8'
-      }
-    } else if (channelID === '2') {
-      source = {
-        title: 'TNT',
-        dash: '',
-        hls: 'https://cors-proxy.elfsight.com/http://170.254.18.106/TNT/index.m3u8'
-      };
-    } 
-    player.load(source);
-  }, delay);
-}
-
-(function () {
-  var playerContainer = document.getElementById('player-container');
-  player = new bitmovin.player.Player(playerContainer, conf);
-
-  switchChannel('1');
-})();
-
-</script>
+                  </div>   
+      
 </body>
 </html>
